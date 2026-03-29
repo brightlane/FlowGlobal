@@ -1,227 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automate your business with ManyChat! The best chatbot platform for lead generation, customer service, and sales.">
-    <meta name="keywords" content="ManyChat, chatbot, automation, lead generation, customer service, sales, chatbot platform, marketing automation, ManyChat affiliate">
-    <meta name="robots" content="index, follow">
-    <title>Automate Your Business with ManyChat - The Best Chatbot Platform</title>
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Article",
-      "headline": "Automate Lead Generation & Sales with ManyChat",
-      "description": "Discover how ManyChat can automate sales and lead generation for businesses worldwide.",
-      "image": "https://example.com/images/hero-image.jpg",
-      "author": {
-        "@type": "Organization",
-        "name": "ManyChat"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "ManyChat"
-      },
-      "datePublished": "2023-03-01"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ManyChat is a powerful chatbot platform for automating your business. Learn how to grow your business with chatbots.">
+  <meta property="og:title" content="Boost Your Business with ManyChat">
+  <meta property="og:description" content="Discover how ManyChat can help automate customer service and lead generation for your business.">
+  <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <title>ManyChat - The Best Chatbot for Automating Your Business</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
-    </script>
 
-    <style>
-        /* Resetting default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    h1, h2, h3 {
+      color: #333;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        h1, h2, h3 {
-            font-family: 'Helvetica', sans-serif;
-        }
+    a {
+      color: #ff6600;
+      text-decoration: none;
+    }
 
-        /* Main Heading Styles */
-        .headline {
-            font-size: 3em;
-            text-align: center;
-            margin-top: 30px;
-            cursor: pointer;
-            color: #2d4f6c;
-            transition: color 0.3s ease;
-        }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        .headline:hover {
-            color: #0077cc;
-        }
+    /* Hero Section */
+    .hero {
+      background: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-        /* CTA Button Styles */
-        .cta a {
-            display: inline-block;
-            padding: 15px 40px;
-            background-color: #00b5e2;
-            color: white;
-            font-size: 20px;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
 
-        .cta a:hover {
-            background-color: #0077cc;
-        }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
 
-        .cta {
-            text-align: center;
-            margin-top: 30px;
-        }
+    .cta a {
+      background-color: #ff6600;
+      color: white;
+      font-size: 18px;
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
 
-        /* Language Switcher */
-        .language-switcher {
-            text-align: center;
-            margin-top: 50px;
-        }
+    .cta a:hover {
+      background-color: #ff4500;
+      transform: scale(1.05);
+    }
 
-        .language-switcher a {
-            color: #0077cc;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    /* Language Switcher */
+    .language-switcher {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-        .language-switcher a:hover {
-            text-decoration: underline;
-        }
+    .language-switcher a {
+      display: inline-block;
+      margin: 5px;
+    }
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
+    /* Features Section */
+    .features {
+      padding: 40px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
 
-        footer a {
-            color: #00b5e2;
-            text-decoration: none;
-        }
+    .features h2 {
+      font-size: 2rem;
+    }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+    .features ul {
+      padding: 0;
+      margin-top: 20px;
+    }
 
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-            .headline {
-                font-size: 2em;
-                margin-top: 20px;
-            }
+    .features li {
+      margin-bottom: 10px;
+    }
 
-            .cta a {
-                font-size: 18px;
-                padding: 12px 30px;
-            }
-        }
-    </style>
+    /* Stats Section */
+    .stats {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .stats h2 {
+      font-size: 2rem;
+    }
+
+    .stats ul {
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .stats li {
+      margin-bottom: 10px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 40px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .testimonials p {
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: #ff6600;
+      margin: 0 15px;
+    }
+
+    .social-media a {
+      color: #ff6600;
+      margin: 0 10px;
+    }
+
+    .footer p {
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+
+    /* Mobile Optimized Styles */
+    @media screen and (max-width: 768px) {
+      .hero {
+        padding: 30px 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .cta a {
+        padding: 10px 30px;
+        font-size: 16px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .navbar a {
+        margin: 10px 0;
+      }
+
+      .language-switcher {
+        margin-top: 20px;
+      }
+
+      .language-switcher a {
+        margin: 5px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Main Section -->
-    <section class="content-section">
-        <!-- Clickable Headline Section -->
-        <h1 class="headline" onclick="window.location.href='https://manychat.partnerlinks.io/nwkkk7vkps17';" role="link">
-            Automate Lead Generation & Sales with ManyChat
-        </h1>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Automate Your Business with ManyChat</h1>
+    <p>The leading chatbot platform to help you grow your business, generate leads, and automate customer service.</p>
+    <div class="cta">
+      <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a>
+    </div>
+  </section>
 
-        <!-- Call to Action -->
-        <div class="cta">
-            <p><strong>Start automating your business now! <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a></strong></p>
-        </div>
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <p>Switch Language:</p>
+    <a href="/es" target="_self">Español</a> | 
+    <a href="/fr" target="_self">Français</a> | 
+    <a href="/de" target="_self">Deutsch</a> | 
+    <a href="/pt" target="_self">Português</a>
+  </div>
 
-        <!-- FAQ Section -->
-        <section>
-            <h3>Is ManyChat easy to use for beginners?</h3>
-            <p>Yes! ManyChat offers an intuitive drag-and-drop builder, making it easy for anyone to set up automated workflows with no coding skills required.</p>
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose ManyChat?</h2>
+    <ul>
+      <li>Automate your marketing, sales, and customer support with powerful chatbots.</li>
+      <li>Integrate with platforms like Shopify, Facebook Messenger, and more.</li>
+      <li>Easy-to-use drag-and-drop builder, no coding required.</li>
+    </ul>
+  </section>
 
-            <h3>How can ManyChat help my business?</h3>
-            <p>ManyChat helps automate customer service, lead generation, and marketing through interactive chatbots. It's designed to work across multiple channels like Facebook Messenger, SMS, and email, making it easy to connect with your customers.</p>
-        </section>
+  <!-- Stats Section -->
+  <section class="stats">
+    <h2>Why Choose ManyChat?</h2>
+    <ul>
+      <li>Over 20,000 businesses use ManyChat every day.</li>
+      <li>98% of customers are satisfied with the automation process.</li>
+      <li>Generate 10x more leads with chatbot automation.</li>
+    </ul>
+  </section>
 
-        <div class="cta">
-            <p><strong>Still have questions? Ready to start? <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a></strong></p>
-        </div>
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h3>Customer Testimonials</h3>
+    <p>"ManyChat has revolutionized our business! It’s the best tool for automating customer service." – Sarah L., E-Commerce Owner</p>
+  </section>
 
-        <!-- Testimonials Section -->
-        <section>
-            <h3>What Are People Saying About ManyChat?</h3>
-            <p>"ManyChat has helped us automate our customer support and lead generation. We saw a 40% increase in leads within the first month!" - <strong>John Doe, CEO of ABC Company</strong></p>
-            <p>"As a small business owner, ManyChat saved us countless hours of manual work. It’s truly a game-changer." - <strong>Jane Smith, Founder of XYZ Corp.</strong></p>
-        </section>
-
-        <!-- Case Studies Section -->
-        <section>
-            <h3>How ManyChat Helps Businesses Grow</h3>
-            <p><strong>Case Study 1:</strong> A leading eCommerce store increased their sales by 30% in just 3 months by automating their customer support and marketing efforts with ManyChat.</p>
-            <p><strong>Case Study 2:</strong> A local restaurant used ManyChat to handle reservations, increasing customer satisfaction and reducing no-show rates by 25%.</p>
-        </section>
-
-        <!-- Comparison Section -->
-        <section>
-            <h3>ManyChat vs Competitors</h3>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <th>Feature</th>
-                    <th>ManyChat</th>
-                    <th>Competitor A</th>
-                    <th>Competitor B</th>
-                </tr>
-                <tr>
-                    <td>Ease of Use</td>
-                    <td>⭐⭐⭐⭐⭐</td>
-                    <td>⭐⭐⭐⭐</td>
-                    <td>⭐⭐⭐</td>
-                </tr>
-                <tr>
-                    <td>Pricing</td>
-                    <td>Affordable</td>
-                    <td>Expensive</td>
-                    <td>Moderate</td>
-                </tr>
-                <tr>
-                    <td>Features</td>
-                    <td>Full suite</td>
-                    <td>Limited</td>
-                    <td>Basic</td>
-                </tr>
-            </table>
-        </section>
-
-        <div class="cta">
-            <p><strong>Ready to automate your business? <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a></strong></p>
-        </div>
-    </section>
-
-    <!-- Footer Section with Language Switcher -->
-    <footer class="content-section">
-        <p>&copy; 2023 ManyChat. All Rights Reserved.</p>
-        <p>Powered by <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">ManyChat</a></p>
-
-        <!-- Language Switcher -->
-        <div class="language-switcher">
-            <p>Switch Language:</p>
-            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=es" target="_blank">Español</a> | 
-            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=fr" target="_blank">Français</a> | 
-            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=de" target="_blank">Deutsch</a> | 
-            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=pt" target="_blank">Português</a>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="/privacy-policy">Privacy Policy</a> |
+      <a href="/terms-of-service">Terms of Service</a> |
+      <a href="/contact">Contact Us</a>
+    </div>
+    <div class="social-media">
+      <a href="https://facebook.com/yourpage" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/yourpage" target="_blank">Twitter</a> |
+      <a href="https://linkedin.com/yourpage" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2023 ManyChat. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
