@@ -32,75 +32,214 @@
     <link rel="alternate" href="https://yourwebsite.com/ar" hreflang="ar">
     <link rel="alternate" href="https://yourwebsite.com/pt" hreflang="pt">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <style>
-        /* Minimal CSS for styling */
+        /* Body */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
+        /* Header */
         header {
-            background-color: #333;
+            background-color: #007BFF;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #hero h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .cta {
+            padding: 12px 40px;
+            background-color: #FF5722;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
             text-align: center;
         }
 
-        section {
-            padding: 20px;
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 40px;
         }
 
+        /* Product Comparison Table */
         table {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
             border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
 
-        #cookie-banner {
-            background-color: #222;
+        th {
+            background-color: #007BFF;
             color: white;
-            padding: 10px;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .testimonial cite {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #FF5722;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #e64a19;
+        }
+
+        /* Cookie Banner */
+        #cookie-banner {
+            background-color: #333;
+            color: white;
             position: fixed;
             bottom: 0;
             width: 100%;
             text-align: center;
+            padding: 15px 0;
+        }
+
+        #cookie-banner button {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #cookie-banner button:hover {
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1><a href="https://yourwebsite.com" style="color: white; text-decoration: none;">Your Product - Best in Class</a></h1>
+        <h1><a href="https://yourwebsite.com">Your Product - Best in Class</a></h1>
     </header>
 
     <!-- Language Switcher -->
     <nav>
         <ul>
-            <li><a href="/en" hreflang="en">English</a></li>
-            <li><a href="/es" hreflang="es">Español</a></li>
-            <li><a href="/fr" hreflang="fr">Français</a></li>
-            <li><a href="/zh" hreflang="zh">中文</a></li>
-            <li><a href="/ru" hreflang="ru">Русский</a></li>
-            <li><a href="/ar" hreflang="ar">العربية</a></li>
-            <li><a href="/pt" hreflang="pt">Português</a></li>
+            <li><a href="/en">English</a></li>
+            <li><a href="/es">Español</a></li>
+            <li><a href="/fr">Français</a></li>
+            <li><a href="/zh">中文</a></li>
+            <li><a href="/ru">Русский</a></li>
+            <li><a href="/ar">العربية</a></li>
+            <li><a href="/pt">Português</a></li>
         </ul>
     </nav>
 
@@ -199,15 +338,12 @@
             <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
-        <div id="cookie-banner">
-            <p>This website uses cookies to improve your experience. <button>Accept</button></p>
-        </div>
     </footer>
 
-    <!-- Scripts for Language Switching -->
-    <script>
-        // Language switcher code here (if dynamic language switching is implemented)
-    </script>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner">
+        <p>This website uses cookies to improve your experience. <button>Accept</button></p>
+    </div>
 
 </body>
 </html>
