@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ManyChat Automation Hub</title>
   <meta name="description" content="Automate messaging, increase conversions, and grow your business globally with ManyChat. Fully multilingual, SEO-ready, and conversion-optimized.">
-  <link rel="canonical" href="https://manychat.partnerlinks.io/nwkkk7vkps17">
-  <link rel="preload" as="image" href="hero-image.jpg">
   <meta property="og:title" content="ManyChat Automation Hub">
   <meta property="og:description" content="Automate messaging and grow your business globally. Get started with ManyChat today!">
   <meta property="og:image" content="hero-image.jpg">
+  <title>ManyChat Automation Hub</title>
 
-  <!-- JSON-LD structured data for FAQ and Product -->
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="hero-image.jpg">
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -135,26 +135,25 @@
   </section>
 
   <section>
-    <h2>Daily Tip</h2>
-    <p>Boost sales by automating follow-ups for abandoned carts. Try it now with ManyChat!</p>
+    <h2>Daily Tips</h2>
+    <div class="daily-tip">
+      <p><strong>Tip #1:</strong> Always automate replies for FAQ to save time.</p>
+      <p><strong>Tip #2:</strong> Use ManyChat's email integration to drive higher conversion rates.</p>
+    </div>
   </section>
 
+  <!-- FAQ Section -->
   <section>
     <h2>FAQ</h2>
-    <p><strong>Q:</strong> How long does it take to set up ManyChat? <br><strong>A:</strong> You can set up in just 5 minutes!</p>
-    <p><strong>Q:</strong> Can I try ManyChat for free? <br><strong>A:</strong> Yes! There is a free version with limited features.</p>
-    <p><strong>Q:</strong> Is ManyChat easy to integrate? <br><strong>A:</strong> Yes, integration is quick and easy, even for beginners.</p>
+    <p><strong>Q:</strong> Is ManyChat free? <strong>A:</strong> Yes! There is a free version with limited features.</p>
+    <p><strong>Q:</strong> Is ManyChat easy to integrate? <strong>A:</strong> Yes, integration is quick and easy, even for beginners.</p>
   </section>
 </div>
 
-<!-- SPANISH -->
-<!-- Similar structure for Spanish, French, Chinese, Russian, Arabic, and Portuguese -->
-
-<!-- Switch Language Script -->
 <script>
 function switchLang(lang) {
-  document.querySelectorAll('.lang-section').forEach(el => {
-    el.classList.remove('active');
+  document.querySelectorAll('.lang-section').forEach(section => {
+    section.classList.remove('active');
   });
   document.getElementById(lang).classList.add('active');
 }
