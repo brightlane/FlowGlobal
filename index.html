@@ -1,181 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Automate your real estate lead generation and sales with ManyChat's easy-to-use chatbot platform. Available globally, optimized for mobile, and integrates with WeChat, Facebook, and more.">
-  <meta name="keywords" content="real estate chatbot, ManyChat for real estate, automate lead generation, chatbot automation, sales automation">
-  <meta name="robots" content="index, follow">
-  <title>ManyChat Chatbot Automation - Global Sales & Lead Generation</title>
-
-  <!-- International SEO meta tags for localization -->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Automate Your Lead Generation with ManyChat" />
-  <meta property="og:description" content="Explore ManyChat's powerful chatbot platform for lead generation, customer support, and sales automation. Global reach with local language support." />
-  <meta property="og:image" content="https://example.com/images/hero-image.jpg" />
-  
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    /* Simplified CSS for compact design */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate your business with ManyChat! The best chatbot platform for lead generation, customer service, and sales.">
+    <meta name="keywords" content="ManyChat, chatbot, automation, lead generation, customer service, sales, chatbot platform, marketing automation, ManyChat affiliate">
+    <meta name="robots" content="index, follow">
+    <title>Automate Your Business with ManyChat - The Best Chatbot Platform</title>
+    
+    <!-- Structured Data: JSON-LD for Enhanced SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Automate Lead Generation Globally with ManyChat",
+      "description": "Discover how ManyChat can automate sales and lead generation for businesses worldwide.",
+      "image": "https://example.com/images/hero-image.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "ManyChat"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ManyChat"
+      },
+      "datePublished": "2023-03-01"
     }
+    </script>
 
-    h1 {
-      font-size: 1.5em;
-      color: #003366;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    h2, h3 {
-      font-size: 1.25em;
-      color: #003366;
-      margin-top: 1em;
-    }
+        h1, h2, h3 {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 1em;
-    }
+        .cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin-top: 20px;
+        }
 
-    .cta-btn {
-      background-color: #ff5722;
-      color: #fff;
-      padding: 15px 30px;
-      border: none;
-      text-align: center;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
+        .headline {
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: -20px;
+            cursor: pointer;
+            color: #2d4f6c;
+            transition: color 0.3s ease;
+        }
 
-    .cta-btn:hover {
-      background-color: #e64a19;
-    }
+        .headline:hover {
+            color: #0077cc;
+        }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #003366;
-      padding: 10px 0;
-      z-index: 100;
-      text-align: center;
-    }
+        .cta a {
+            padding: 15px 30px;
+            background-color: #00b5e2;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
 
-    .navbar nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        .cta a:hover {
+            background-color: #008c9e;
+        }
 
-    .navbar nav ul li {
-      margin: 0 20px;
-    }
+        @media (max-width: 768px) {
+            .cta {
+                flex-direction: column;
+                padding: 10px;
+            }
 
-    .navbar nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-
-    .navbar nav ul li a:hover {
-      color: #ff5722;
-    }
-
-    /* Hero Section */
-    .hero {
-      background-image: url('hero-bg.jpg');
-      background-size: cover;
-      padding: 80px 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    /* Footer Section */
-    footer {
-      background-color: #003366;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-  </style>
+            .headline {
+                font-size: 1.8em;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Sticky Navigation Bar -->
-  <header class="navbar">
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#cta">Get Started</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Automate Lead Generation Globally with ManyChat</h1>
-    <p>Explore the power of chatbots for sales and customer support. Available in multiple languages with seamless integrations for a global audience.</p>
-    <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" class="cta-btn">Start Using ManyChat Now</a>
-  </section>
+    <!-- Main Section -->
+    <section class="content-section">
+        <!-- Clickable Headline Section -->
+        <h1 class="headline" onclick="window.location.href='https://manychat.partnerlinks.io/nwkkk7vkps17';" role="link">
+            Discover How ManyChat Can Automate Your Business Chatbots Globally
+        </h1>
 
-  <!-- Features Section -->
-  <section id="features" style="padding: 40px 20px; text-align: center;">
-    <h2>Key Features of ManyChat</h2>
-    <h3>Automated Conversations</h3>
-    <p>Manage customer inquiries without any manual effort. Available 24/7 across multiple platforms like WeChat, Messenger, and SMS.</p>
+        <div class="cta">
+            <p><strong>Ready to automate your business? <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a></strong></p>
+        </div>
 
-    <h3>Instant Lead Qualification</h3>
-    <p>Automatically qualify your leads with targeted questions, increasing your conversion rates.</p>
+        <!-- FAQ Section -->
+        <h3>Is ManyChat easy to use for beginners?</h3>
+        <p>Yes! ManyChat offers an intuitive drag-and-drop builder, making it easy for anyone to set up automated workflows with no coding skills required.</p>
 
-    <h3>Easy Integrations</h3>
-    <p>Integrate with your favorite CRMs, payment platforms like WeChat Pay, and email marketing systems for smooth customer interaction.</p>
-  </section>
+        <div class="cta">
+            <p><strong>Still have questions? Ready to start? <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">Get Started with ManyChat</a></strong></p>
+        </div>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" style="background-color: #e9ecef; padding: 50px 20px;">
-    <h2>User Success Stories</h2>
-    <blockquote>"ManyChat has been a game-changer for our lead generation. We're closing deals faster and more efficiently!"<footer>- Alex, Realtor</footer></blockquote>
-    <blockquote>"Thanks to ManyChat, we’ve increased our sales by 20% in just two months!"<footer>- Samantha, Real Estate Agent</footer></blockquote>
-  </section>
+    <!-- Footer Section with Language Switch Option -->
+    <footer class="content-section">
+        <p>&copy; 2023 ManyChat. All Rights Reserved.</p>
+        <p>Powered by <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank">ManyChat</a></p>
 
-  <!-- Call to Action Section -->
-  <section id="cta" style="text-align: center; padding: 50px 20px;">
-    <h2>Ready to Automate Your Business with ManyChat?</h2>
-    <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" class="cta-btn">Start Your Free Trial</a>
-  </section>
-
-  <!-- Footer Section with Language Switch Option -->
-  <footer>
-    <p>&copy; 2023 ManyChat. All Rights Reserved.</p>
-    <p>Powered by <a href="https://manychat.partnerlinks.io/nwkkk7vkps17" target="_blank" style="color: #ff5722;">ManyChat</a></p>
-    
-    <!-- Language Switcher for International Audiences -->
-    <div style="text-align: center;">
-      <p>Switch Language:</p>
-      <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=es" target="_blank" style="color: #ff5722;">Español</a> |
-      <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=fr" target="_blank" style="color: #ff5722;">Français</a> |
-      <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=de" target="_blank" style="color: #ff5722;">Deutsch</a> |
-      <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=pt" target="_blank" style="color: #ff5722;">Português</a>
-    </div>
-  </footer>
+        <!-- Language Switcher (Localized Links) -->
+        <div style="text-align: center;">
+            <p>Switch Language:</p>
+            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=es" target="_blank">Español</a> | 
+            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=fr" target="_blank">Français</a> | 
+            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=de" target="_blank">Deutsch</a> | 
+            <a href="https://manychat.partnerlinks.io/nwkkk7vkps17?lang=pt" target="_blank">Português</a>
+        </div>
+    </footer>
 
 </body>
-
 </html>
