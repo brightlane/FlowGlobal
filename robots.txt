@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of admin/system files (if any)
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /logs/
+
+# Optional: prevent duplicate/utility pages from being indexed too heavily
+Disallow: /private/
+Disallow: /drafts/
+
+# Sitemap location (IMPORTANT for SEO)
+Sitemap: https://brightlane.github.io/FlowGlobal/sitemap.xml
