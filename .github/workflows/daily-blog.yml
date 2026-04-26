@@ -1,29 +1,42 @@
 name: Daily Blog Generator
 
 on:
-  schedule:
-    - cron: "0 8 * * *"
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to the main branch
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate-blog:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner image
 
     steps:
-    - uses: actions/checkout@v3
+      # Step to set up a valid Python version (e.g., Python 3.9)
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Specify the correct version (e.g., '3.9', '3.8')
 
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.10
+      # Step to check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Generate blog
-      run: python daily-generator.py
+      # Optional: Install dependencies if necessary (ensure requirements.txt exists or adjust)
+      # - name: Install dependencies
+      #   run: |
+      #     python -m pip install --upgrade pip
+      #     pip install -r requirements.txt
 
-    - name: Commit changes
-      run: |
-        git config --global user.name "seo-bot"
-        git config --global user.email "bot@users.noreply.github.com"
-        git add .
-        git commit -m "Daily SEO blog update"
-        git push
+      # Step to run your blog generation script (change the filename if necessary)
+      - name: Generate blog posts
+        run: |
+          python generate_blog.py  # Replace this with your actual script name
+
+      # Step to upload generated files (adjust path based on where your generated blog posts are saved)
+      - name: Upload generated blog posts
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-blogs
+          path: ./generated_blogs/  # Adjust this path based on your directory structure
